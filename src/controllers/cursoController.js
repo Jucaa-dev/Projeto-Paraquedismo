@@ -17,7 +17,7 @@ export const cursoUpdateScheme = Joi.object ({
 export const listarCurso = async (req, res) => {
     try {
         const {idCurso, tipo, minValor, maxValor} = req.query;
-        const curso = await produtoService.findAll(idCurso,tipo,minValor,maxValor);
+        const curso = await cursoServices.findAll(idCurso,tipo,minValor,maxValor);
         if (curso.length === 0) {
             return res.status(404).json({ message:
             "Nenhum curso encontrado com esses filtros."});
@@ -32,7 +32,7 @@ export const listarCurso = async (req, res) => {
 export const adicionarCurso = async (req, res) =>{
     try{
         const novoCurso = await cursoServices.create(req.body);
-        res.status(201).json({ message: 'Produto adicionado com sucesso', data:
+        res.status(201).json({ message: 'Curso adicionado com sucesso', data:
             novoCurso });
     }catch (err) {
         console.error(`Erro ao adicionar curso:`,err);

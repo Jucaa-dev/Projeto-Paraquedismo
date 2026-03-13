@@ -45,7 +45,7 @@ export const listarClienteCpf = async (req, res) => {
 export const adicionarCliente = async (req, res) => {
 try {
     const novoCliente = await clienteService.create(req.body);
-    res.status(201).json({ message: 'Cliente adicionada com sucesso', data: novoCliente });
+    res.status(201).json({ message: 'Cliente adicionado com sucesso', data: novoCliente });
 } catch (err) {
     console.error('Erro ao adicionar cliente:', err);
     if (err.code === 'ER_DUP_ENTRY') {
@@ -58,7 +58,7 @@ try {
 export const atualizarCliente = async (req, res) => {
     try {
         const { cpf } = req.params;
-        const updated = await clienteService.update(cpf, req.body);
+        const updated = await clienteServices.update(cpf, req.body);
         if (!updated) {
            return res.status(404).json({ error: 'Cliente não encontrado'}); 
         }
@@ -72,7 +72,7 @@ export const atualizarCliente = async (req, res) => {
 export const deletarCliente = async (req, res) => {
     try {
         const { cpf } = req.params;
-        const deleted = await clienteService.remove(cpf);
+        const deleted = await clienteServices.remove(cpf);
         if (!deleted) {
           return res.status(400).json({ error: 'Cliente não encontrado'});  
         }
