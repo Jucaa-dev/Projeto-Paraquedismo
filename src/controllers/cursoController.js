@@ -2,10 +2,15 @@ import * as cursoServices from "../services/cursoServices.js";
 import Joi from "joi";
 
 export const cursoCreateSchema = Joi.object ({
+<<<<<<< HEAD
     nome: Joi.string().required.max(50),
     idCurso: Joi.string().required(),
     dataCurso: Joi.date().required(),
     horario: Joi.hour().required(),
+=======
+    idCurso: Joi.string().required(),
+    dataCurso: Joi.date().required(),
+>>>>>>> 6af840f299162514811922f7799cdc75b3b6a971
     valorCurso: Joi.number().positive().required(),
     tipo: Joi.string().required()
 });
