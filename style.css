@@ -1,0 +1,33 @@
+:root{
+    --bg-brand-preto: #00000000;
+    --bg-brand-branco: #FFFFFF;
+}
+
+body{
+    font-family: "inter", sans-serif;
+}
+
+.bg-brand-gradient-footer {
+    background: #FFFFFF;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(67, 112, 199, 1) 27%);
+}
+
+.logo-footer {
+    width: 200px;
+    height: auto;
+}
+
+.icones {
+    width: 30px;
+    height: 30px;
+}
+
+.teste {
+    width: auto;
+    height: auto;
+}
+
+.caricatura {
+    width: 130px;
+    height: 170px;
+}
