@@ -1,9 +1,9 @@
-:root{
-    --bg-brand-preto: #00000000;
-    --bg-brand-branco: #FFFFFF;
+:root {
+    --brand-preto: #00000000;
+    --brand-branco: #FFFFFF;
 }
 
-body{
+body {
     font-family: "inter", sans-serif;
 }
 
@@ -22,12 +22,58 @@ body{
     height: 30px;
 }
 
-.teste {
-    width: auto;
+
+.foto {
+    width: 130px;
+    height: 170px;
+
+}
+
+.dedinho {
+    cursor: pointer;
+}
+
+.logo-body {
+    width: 250px;
     height: auto;
 }
 
-.caricatura {
-    width: 130px;
-    height: 170px;
+.img-login {
+    width: 64px;
+    height: auto;
+
+}
+
+.divisao {
+    border-left-color: #000000;
+    border-left-width: 2px;
+    border-left-style: solid;
+}
+
+.nav-link {
+    padding: 0;
+}
+
+.bg-brand-botaocadastro {
+    width: 100px;
+    background: #000000;
+    background: radial-gradient(circle, rgba(0, 0, 0, 0.24) 0%, rgba(0, 0, 0, 0.24) 100%);
+
+}
+
+.bg-brand-botaologin {
+    width: 100px;
+    background: #000000;
+    background: radial-gradient(circle, rgba(0, 0, 0, 0.24) 0%, rgba(0, 0, 0, 0.24) 100%)
+}
+
+.bg-brand-index {
+    background: #D7E2E7;
+    background: linear-gradient(90deg, rgba(215, 226, 231, 1) 5%, rgba(194, 219, 237, 1) 18%, rgba(197, 218, 235, 1) 25%, rgba(192, 219, 237, 1) 33%, rgba(187, 223, 240, 1) 40%, rgba(187, 223, 240, 1) 53%, rgba(160, 205, 251, 1) 63%, rgba(143, 189, 251, 1) 87%, rgba(143, 189, 251, 1) 100%);
+}
+
+.bg-brand-preto {
+    background: #000000;
+    background: radial-gradient(circle, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%);
+
 }
