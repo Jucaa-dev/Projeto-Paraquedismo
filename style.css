@@ -49,11 +49,19 @@ main {
 }
 
 .divisao {
+<<<<<<< HEAD
     border-left: 2px solid #000;
     padding-left: 1rem !important;
     margin-left: 0.5rem;
     border-radius: 0;
 }
+=======
+        border-left: 2px solid #000;
+        padding-left: 1rem !important;
+        margin-left: 0.5rem;
+        border-radius: 0;
+    }
+>>>>>>> 7d300286d678a99477442a4f4a1c96a1a52a9fcd
 
 .nav-link {
     padding: 0;
@@ -99,6 +107,7 @@ main {
 .bg-brand-skybus {
     background: #BDCEE0;
     background: linear-gradient(90deg, rgba(189, 206, 224, 1) 0%, rgba(173, 201, 227, 1) 12%, rgba(160, 198, 228, 1) 25%, rgba(156, 199, 230, 1) 36%, rgba(151, 190, 226, 1) 48%, rgba(144, 185, 225, 1) 60%, rgba(157, 184, 220, 1) 72%, rgba(157, 179, 216, 1) 83%, rgba(124, 160, 204, 1) 92%, rgba(90, 129, 175, 1) 100%);
+<<<<<<< HEAD
 }
 
 .paraquedista {
@@ -122,3 +131,6 @@ main {
     background-color: #1A3583;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
+=======
+}
+>>>>>>> 7d300286d678a99477442a4f4a1c96a1a52a9fcd
