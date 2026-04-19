@@ -1,7 +1,7 @@
 import express from 'express';
-import * as  agendamentoController from '../controllers/agendamentoController.js';
+import * as agendamentoController from '../controllers/agendamentoController.js';
 import validate from '../middlewares/validate.js'
-import { agendamentoCreateSchema,  agendamentoUpdateSchema } from '../controllers/ agendamentoController.js';
+import { agendamentoCreateSchema,  agendamentoUpdateSchema } from '../controllers/agendamentoController.js';
 import authMiddleware from '../middlewares/authMiddleware.js'; //1. Importar o middleware
 const router = express.Router();
 
@@ -14,8 +14,7 @@ router.post('/', validate(agendamentoCreateSchema),agendamentoController.adicion
 // O caminho base '/api/cursos' já foi definido no index.js
 // Agora definimos apenas as partes relativas: '/', '/:cpf', etc.
 router.get('/',  agendamentoController.listarAgendamento); //Rota final: GET / api/cursos
-router.get('/:id',  agendamentoController.listarAgendamentoidAgendemento); //Rota final: GET/ api/cursos/:cpf
 
-router.put('/:id', validate( agendamentoUpdateSchema),  agendamentoController.atualizargendamento); //Rota final: PUT /api/cursos/:cpf
+router.put('/:id', validate( agendamentoUpdateSchema),  agendamentoController.atualizarAgendamento); //Rota final: PUT /api/cursos/:cpf
 router.delete('/:id',  agendamentoController.deletarAgendamento); //Rota final: DELETE /api/cursos/:id
 export default router;

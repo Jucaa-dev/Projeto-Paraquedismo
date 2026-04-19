@@ -15,6 +15,8 @@ import  cursoRoutes from './routes/cursoRoutes.js';
 
 import saltoDeParaquedasRoutes from './routes/saltoDeParaquedasRoutes.js';
 
+import agendamentoRoutes from './routes/agendamentoRoutes.js';
+
 import { request } from 'http';
 
 const __filename = fileURLToPath(import.meta.url);

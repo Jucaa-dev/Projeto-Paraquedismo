@@ -14,8 +14,7 @@ router.post('/', validate(saltoDeParaquedasCreateSchema), saltoDeParaquedasContr
 // O caminho base '/api/cursos' já foi definido no index.js
 // Agora definimos apenas as partes relativas: '/', '/:cpf', etc.
 router.get('/', saltoDeParaquedasController.listarSaltoDeParaquedas); //Rota final: GET / api/cursos
-router.get('/:id', saltoDeParaquedasController.listarSaltoDeParaquedasIdSalto); //Rota final: GET/ api/cursos/:cpf
 
-router.put('/:id', validate(saltoDeParaquedasUpdateSchema), saltoDeParaquedasController.atualizarSaltoDeParaquedas); //Rota final: PUT /api/cursos/:cpf
-router.delete('/:id', saltoDeParaquedasController.deletarSaltoDeParaquedas); //Rota final: DELETE /api/cursos/:id
+router.put('/:id', validate(saltoDeParaquedasUpdateSchema), saltoDeParaquedasController.atualizarSaltodeParaquedas); //Rota final: PUT /api/cursos/:cpf
+router.delete('/:id', saltoDeParaquedasController.deletarSaltodeParaquedas); //Rota final: DELETE /api/cursos/:id
 export default router;

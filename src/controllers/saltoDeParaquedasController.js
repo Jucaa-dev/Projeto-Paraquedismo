@@ -4,14 +4,14 @@ import Joi from "joi";
 export const saltoDeParaquedasCreateSchema = Joi.object ({
     idSalto: Joi.string().required(),
     dataSalto: Joi.date().required(),
-    tipo: Joi.hour().required(),
+    tipo: Joi.string().required(),
     valorTotal: Joi.number().positive().required(),
     status: Joi.string().required()
 });
 
 export const saltoDeParaquedasUpdateSchema = Joi.object ({
     dataSalto: Joi.date(),
-    tipo: Joi.hour(),
+    tipo: Joi.string(),
     valorTotal: Joi.number().positive(),
     status: Joi.string()
 }).min(1);
@@ -42,5 +42,33 @@ export const adicionarSaltoDeParaquedas = async (req, res) =>{
             return res.status(409).json({error:'ID já cadastrado.'});
         }
         res.status(500).json({ error: 'Erro ao adicionar salto de paraquedas'});
+    }
+};
+
+export const atualizarSaltodeParaquedas = async (req, res) => {
+    try {
+        const { idSaltodeParaquedas } = req.params;
+        const updated = await SaltodeParaquedasService.update(idSaltodeParaquedas, req.body);
+        if (!updated) {
+            return res.status(404).json({ error: `SaltodeParaquedas não encontrado`});
+        }
+        res.status(200).json({ message: `SaltodeParaquedas atualizado com sucesso` });
+    } catch (err) {
+        console.error(`Erro ao atualizar SaltodeParaquedas:`, err);
+        res.status(500).json({ error: `Erro ao atualizar SaltodeParaquedas` });
+    }
+};
+
+export const deletarSaltodeParaquedas = async (req, res) => {
+    try {
+        const { idSaltodeParaquedas } = req.params;
+        const deleted = await SaltodeParaquedasService.remove(idSaltodeParaquedas);
+        if (!deleted) {
+            return res.status(404).json({ error: `Salto não encontrado` });
+        }
+        res.status(200).json({ message: `Salto deletado com sucesso` });
+    } catch (err) {
+        console.error(`Erro ao deletar SaltodeParaquedas:`, err);
+        res.status(500).json({ error: `Erro ao deletar Salto` });
     }
 };
