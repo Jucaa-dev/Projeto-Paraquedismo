@@ -43,7 +43,7 @@ main {
     cursor: pointer;
 }
 
-.dedinho:hover{
+.dedinho:hover {
     text-shadow: 0 0 10px #ffffff, 0 0 10px #000000
 }
 
@@ -76,7 +76,7 @@ main {
 
 }
 
-.bg-brand-botaocadastro:hover{
+.bg-brand-botaocadastro:hover {
     background: #000000;
     background: radial-gradient(circle, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%);
 }
@@ -87,7 +87,7 @@ main {
     background: radial-gradient(circle, rgba(0, 0, 0, 0.24) 0%, rgba(0, 0, 0, 0.24) 100%)
 }
 
-.bg-brand-botaologin:hover{
+.bg-brand-botaologin:hover {
     background: #000000;
     background: radial-gradient(circle, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%);
 }
@@ -142,7 +142,8 @@ main {
     background-color: #1A3583;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-.agendar:hover{
+
+.agendar:hover {
     background-color: #1A3583;
 }
 
@@ -162,12 +163,12 @@ main {
     margin-top: 3%;
 }
 
-.ftcr{
+.ftcr {
     width: 450px;
     height: 400px;
 }
 
-.hero-section{
+.hero-section {
     background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 75%, white 100%), url('/src/home.png') center/cover no-repeat;
     height: 900px;
     width: 100%;
@@ -177,33 +178,34 @@ main {
     text-align: center;
 }
 
-.rounded-bg{
+.rounded-bg {
     border-radius: 25px;
     display: inline-block;
     padding: 10px 20px;
-    font-size: 16px;  
+    font-size: 16px;
 }
-.bg-brand-azul{
+
+.bg-brand-azul {
     background-color: var(--brand-azul);
-}  
+}
 
-.bg-brand-azul2{
+.bg-brand-azul2 {
     background-color: var(--brand-azul2);
-}  
+}
 
-.bg-brand-azul3{
+.bg-brand-azul3 {
     background-color: var(--brand-azul3);
-}  
+}
 
-.bg-brand-azul4{
+.bg-brand-azul4 {
     background-color: var(--brand-azul4);
-}  
+}
 
-.bg-brand-azul5{
+.bg-brand-azul5 {
     background-color: var(--brand-azul5);
-}  
+}
 
-.btn-brand-azulbb2{
+.btn-brand-azulbb2 {
     background-color: var(--brand-azulbb2);
     color: var(--brand-branco);
     height: 80px;
@@ -211,70 +213,100 @@ main {
     align-items: center;
 }
 
-.btn-brand-azulbb2:hover{
+.btn-brand-azulbb2:hover {
     background-color: var(--brand-azulbb);
 }
 
 .destaque {
-    color: var(--brand-preto);  
+    color: var(--brand-preto);
     font-weight: bold;
     font-size: large;
     justify-content: center;
     align-items: center;
     text-align: center;
     margin-top: -3%;
-    }
+}
 
-.login-logo{
+.login-logo {
     width: 250px;
     height: auto;
 }
 
-.login{
+.login {
     background-color: #1B4FC1;
-    width: 300px;
+    width: 60%;
     height: 55px;
 }
 
-.login:hover{
-    background-color:rgba(40, 80, 174, 1);
+.login:hover {
+    background-color: rgba(40, 80, 174, 1);
 }
 
-.limite{
+.limite {
     width: 50%;
 }
 
-.divs{
-    width: 30% !important;
+.limite-cadastro {
+    width: 90%;
+}
+
+.divs {
+    width: 45% !important;
+}
+
+.ceu {
+    background-image: url(src/ceu\ com\ nuvem.png);
+    width: 1440;
+}
+
+.fundo {
+    background: RGBA(237, 237, 237, 0.4);
+    background: linear-gradient(90deg, rgba(237, 237, 237, 0.8) 0%, rgba(237, 237, 237, 0.8) 100%);
+    width: 50%;
+}
+
+.fundo-cadastro {
+    background: RGBA(237, 237, 237, 0.4);
+    background: linear-gradient(90deg, rgba(237, 237, 237, 0.8) 0%, rgba(237, 237, 237, 0.8) 100%);
+    width: 70%;
 }
 
 @media (max-width: 991px) {
 
-  .divisao {
-    border-left: none;
-    padding-left: 0 !important;
-    margin-left: 0;
-  }
+    .divisao {
+        border-left: none;
+        padding-left: 0 !important;
+        margin-left: 0;
+    }
 
-  .img-login{
-    display: none !important;
-  }
+    .img-login {
+        display: none !important;
+    }
 
-  .navbar-nav{
-    align-items: flex-start;
-    padding-left: 10px;
-  }
+    .navbar-nav {
+        align-items: flex-start;
+        padding-left: 10px;
+    }
 
-  .bg-brand-botaologin{
-    margin-right: 80%;
-    margin-top: 10%;
-  }
-  .bg-brand-botaocadastro{
-    margin-right: 80%;
-  }
-  
-  .testes{
-    flex-direction: column;
-    align-items: center;
-  }
+    .bg-brand-botaologin {
+        margin-right: 80%;
+        margin-top: 10%;
+    }
+
+    .bg-brand-botaocadastro {
+        margin-right: 80%;
+    }
+
+    .testes {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .divs {
+        width: 60% !important;
+    }
+
+    .limite {
+    width: 90%;
+}
 }

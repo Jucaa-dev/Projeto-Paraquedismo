@@ -19,28 +19,31 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
-    <main class="container-fluid" style="font-family: inter;">
-        <div class="d-flex align-items-center mt-4 flex-column gap-3">
-            <img class="login-logo" src="./src/Logo Footer.png" alt="">
-            <span
-                class="d-flex justify-content-center align-items-center login fs-2 fw-bold text-white rounded-3">Login</span>
-        </div>
+<body class="ceu">
+    <main class="container-fluid d-flex justify-content-center" style="font-family: inter;">
+        <div class="fundo mt-5 rounded-4">
+            <div class="d-flex align-items-center mt-4 flex-column gap-3">
+                <img class="login-logo" src="./src/Logo Footer.png" alt="">
+                <span
+                    class="d-flex justify-content-center align-items-center login fs-2 fw-bold text-white rounded-3">Login</span>
+            </div>
 
-        <div class="container-fluid d-flex justify-content-center">
-            <div class="text-center limite">
-                <div class="mb-3 mt-5">
-                    <input type="text" id="email" class="form-control" placeholder="Email">
+            <div class="container-fluid d-flex justify-content-center ">
+                <div class="text-center limite">
+                    <div class="mb-3 mt-5">
+                        <input type="text" id="email" class="form-control" placeholder="Email">
+                    </div>
+                    <div class="mb-3">
+                        <input type="password" id="senha" class="form-control mb-2" placeholder="Senha">
+                        <a href="" class="text-muted small">Esqueci minha senha</a>
+                    </div>
+                    <div>
+                        <button class="btn login w-100 fw-bold text-white fs-3 mb-2 mt-4 divs">
+                            Entrar
+                        </button>
+                    </div>
+                    <a href="./index.html" class="text-muted small mb-3">Voltar para o site</a>
                 </div>
-                <div class="mb-3">
-                    <input type="password" id="senha" class="form-control" placeholder="Senha">
-                </div>
-                <div>
-                    <button class="btn login w-100 fw-bold text-white fs-3 mb-3 mt-4 divs">
-                        Entrar
-                    </button>
-                </div>
-                <a href="./index.html" class="text-muted small">Voltar para o site</a>
             </div>
         </div>
     </main>
