@@ -288,10 +288,17 @@ main {
     background: linear-gradient(90deg, rgba(94, 134, 185, 1) 0%, rgba(143, 189, 251, 1) 100%);
     width: 15%;
 }
-.lis{
+
+.lis {
     background-color: #F1F1F1;
     width: 40%;
     box-shadow: #000;
+}
+
+.prem {
+    background: #5E86B9;
+    background: linear-gradient(90deg, rgba(94, 134, 185, 1) 0%, rgba(143, 189, 251, 1) 100%);
+    width: 65%;
 }
 
 @media (max-width: 991px) {
