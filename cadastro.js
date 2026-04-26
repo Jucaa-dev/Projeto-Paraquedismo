@@ -1,32 +1,35 @@
 const API_URL = 'http://localhost:3333/api';
 
-$('#cadastro').click(function (e) {
+
+$('#form-cadastro').on("submit", function (e) {
     e.preventDefault();
 
-    const dados = {
+    const novoProduto = {
+
         nome: $('#nome').val(),
         email: $('#email').val(),
         cpf: $('#cpf').val(),
         telefone: $('#telefone').val(),
         dataNascimento: $('#nasc').val(),
-        senha: $('#senha').val()
-    };
+        senha: $('#senha').val(),
+        tipo: "cliente"
+    }
 
     $.ajax({
         url: `${API_URL}/cliente`,
         type: 'POST',
         contentType: 'application/json',
-        data: JSON.stringify(dados),
-        success: function (res) {
-            localStorage.setItem('token', res.token);
-            localStorage.setItem('cliente',res.cliente);
-            alert('Login efetuado com sucesso!')
-            window.location.href = `${API_URL}/index.html`
+        data: JSON.stringify(novoProduto),
+        success: function () {
+            alert("Cadastro realizado com sucesso")
+            $('#form-cadastro')[0].reset()
+            window.location.href = `http://127.0.0.1:5500/index.html`
         },
         error: function (err) {
-            alert('Usuário ou senha incorretos')
+            alert('Não foi possível realizar o cadastro')
             console.log(err)
         }
-    })
-})
 
+    })
+
+})
