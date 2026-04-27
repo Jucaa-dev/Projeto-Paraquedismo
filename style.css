@@ -307,6 +307,10 @@ main {
     align-items: center;
 }
 
+.logadobotao{
+    display: none !important;
+}
+
 @media (max-width: 991px) {
 
     .divisao {

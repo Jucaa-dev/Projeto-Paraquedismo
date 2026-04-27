@@ -7,8 +7,8 @@ $(document).ready(function () {
 
         if (token) {
             $('.logo-login').addClass('logado')
-            $('#btn-login').hide()
-            $('#btn-cadastro').hide()
+            $('#btn-login').addClass('logadobotao')
+            $('#btn-cadastro').addClass('logadobotao')
 
         }
     }
