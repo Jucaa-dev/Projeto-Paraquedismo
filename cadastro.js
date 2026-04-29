@@ -1,7 +1,7 @@
 const API_URL = 'http://localhost:3333/api';
 
 
-$('#form-cadastro').on("submit", function (e) {
+$('#form-control').on("submit", function (e) {
     e.preventDefault();
 
     const novoCliente = {

@@ -44,12 +44,12 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class=" nav-link text-brand-white dedinho divisao" href="sobre.html">
+                        <a class=" nav-link text-brand-white dedinho divisao" href="index.html#sobre">
                             Quem Somos
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class=" nav-link text-brand-white dedinho divisao " href="cursos.html">
+                        <a class=" nav-link text-brand-white dedinho divisao " href="index.html#cursos">
                             Cursos
                         </a>
                     </li>
@@ -61,11 +61,6 @@
                     <li class="nav-item ">
                         <a class=" nav-link text-brand-white dedinho divisao " href="eventos.html">
                             Eventos
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class=" nav-link text-brand-white dedinho divisao" href="galeria.html">
-                            Galeria
                         </a>
                     </li>
                     <li class="nav-item ">
@@ -113,7 +108,7 @@
                     Se essa é a sua primeira vez, prepare-se para sentir a melhor sensação da sua vida!!! Até você
                     retornar para mais um salto duplo ou, quem sabe, se tornar um paraquedista.</span><br><br><br>
                 <div class="d-flex justify-content-center text-center">
-                    <a href="agendamento.html"
+                    <a data-bs-toggle="modal" data-bs-target="#saltoModal"
                         class="btn agendar fs-4 text-white text-decoration-none fw-bold rounded">Agendar Salto</a>
                 </div>
             </div>
@@ -170,6 +165,40 @@
         </div>
 
 
+
+        <div class="modal fade" id="saltoModal" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <form id="form-admin">
+                        <div class="modal-header bg-brand-azul">
+                            <span class="fs-2 text-white">Agendamento</span>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+
+                        <div class="modal-body">
+                            <div class="d-flex flex-column align-items-center">
+                                <div class="lim">
+                                    <label>Qual tipo de salto você procura?</label>
+                                    <select id="tipoSalto" class="form-select">
+                                        <option selected disabled>Carregando...</option>
+                                    </select>
+                                </div>
+                                <div class='lim mt-3'>
+                                    <label>Quando você tem interesse de saltar?</label>
+                                    <input type="date" class="form-control">
+                                </div>
+                                <a href="" class="btn zipzop text-decoration-none text-white d-flex justify-content-center align-items-center gap-3 fs-4 mt-4"><img src="/src/wppbranco.png" class="wppimg">Agendar Salto</a>
+
+                            </div>
+
+                        </div>
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
     </main>
 
 
@@ -208,6 +237,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
     <script src="login.js"></script>
+    <script src="/agendamento.js"></script>
 </body>
 
 </html>

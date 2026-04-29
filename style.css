@@ -234,7 +234,7 @@ main {
 
 .login {
     background-color: #1B4FC1;
-    width: 60%;
+    width: 60% !important;
     height: 55px;
 }
 
@@ -246,12 +246,8 @@ main {
     width: 50%;
 }
 
-.limite-cadastro {
+.lim {
     width: 90%;
-}
-
-.divs {
-    width: 45% !important;
 }
 
 .ceu {
@@ -307,8 +303,17 @@ main {
     align-items: center;
 }
 
-.logadobotao{
+.logadobotao {
     display: none !important;
+}
+
+.zipzop {
+    background-color: #40CF29;
+    width: 70%;
+}
+
+.wppimg {
+    width: 32px;
 }
 
 @media (max-width: 991px) {
